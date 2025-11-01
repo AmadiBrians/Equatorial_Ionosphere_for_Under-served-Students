@@ -1,0 +1,15 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: notebooks/Why_study_the_EqIon
+- file: notebooks/Morphology
+- file: notebooks/Electrodynamic_variables
+- file: notebooks/Electrodynamics_1
+- file: notebooks/Electrodynamics_2
+- file: notebooks/Electrodynamics_3
+- file: notebooks/Anomalies_1
+- file: notebooks/Anomalies_2
+- file: notebooks/Not_the_END
