@@ -1,0 +1,953 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Anomalies of the Equatorial Ionosphere II &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/Anomalies_2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Not the End…" href="Not_the_END.html" />
+    <link rel="prev" title="Anomalies of the Equatorial Ionosphere I" href="Anomalies_1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Why_study_the_EqIon.html">Why do we study the Ionosphere?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Morphology.html">Morphology of the Equatorial Ionosphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Electrodynamic_variables.html">Variables of the Equatorial Ionosphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Electrodynamics_1.html">Electrodynamics of the Equatorial Ionosphere I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Electrodynamics_2.html">Electrodynamics of the Equatorial Ionosphere II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Electrodynamics_3.html">Electrodynamics of the Equatorial Ionosphere III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Anomalies_1.html">Anomalies of the Equatorial Ionosphere I</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Anomalies of the Equatorial Ionosphere II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Not_the_END.html">Not the End…</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/AmadiBrians/Equatorial_Ionosphere_for_Under-served-Students" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/AmadiBrians/Equatorial_Ionosphere_for_Under-served-Students/issues/new?title=Issue%20on%20page%20%2Fnotebooks/Anomalies_2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/Anomalies_2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Anomalies of the Equatorial Ionosphere II</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#by-amadi-brians-c">By Amadi Brians C.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bamadi-brianspace-org">bamadi@brianspace.org</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-ionization-anomaly-eia">Equatorial Ionization Anomaly (EIA)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formation-of-eia">Formation of EIA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-influencing-eia-formation">Factors Influencing EIA Formation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-plasma-bubbles-epbs">Equatorial Plasma Bubbles (EPBs)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formation-of-epbs">Formation of EPBs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#three-conditions-that-has-to-be-met-for-rti-to-occur-are">Three conditions that has to be met for RTI to occur are:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-the-first-condition-met-in-the-evening-equatorial-ionosphere-plasma">Is the first condition met in the evening equatorial ionosphere (plasma)?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-the-second-condition-met-in-the-evening-equatorial-ionosphere-plasma">Is the second condition met in the evening equatorial ionosphere (plasma)?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-the-third-condition">What about the third condition?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-influencing-the-occurrence-of-epbs">Factors influencing the occurrence of EPBs</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="anomalies-of-the-equatorial-ionosphere-ii">
+<h1>Anomalies of the Equatorial Ionosphere II<a class="headerlink" href="#anomalies-of-the-equatorial-ionosphere-ii" title="Link to this heading">#</a></h1>
+<section id="by-amadi-brians-c">
+<h2>By Amadi Brians C.<a class="headerlink" href="#by-amadi-brians-c" title="Link to this heading">#</a></h2>
+<section id="bamadi-brianspace-org">
+<h3><a class="reference external" href="mailto:bamadi&#37;&#52;&#48;brianspace&#46;org">bamadi<span>&#64;</span>brianspace<span>&#46;</span>org</a><a class="headerlink" href="#bamadi-brianspace-org" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#=========== Import Packages ==============</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cartopy.crs</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ccrs</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">netCDF4</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dataset</span> 
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.dates</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dates</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cartopy.feature</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">cfeature</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">netCDF4</span><span class="w"> </span><span class="kn">import</span> <span class="n">date2num</span><span class="p">,</span> <span class="n">num2date</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.gridspec</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gridspec</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.image</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpimg</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">urllib.parse</span><span class="w"> </span><span class="kn">import</span> <span class="n">quote</span>
+
+<span class="c1">#This user-defined package contains instruction for downloading</span>
+<span class="c1">#download some files from zenodo, necessary to make </span>
+<span class="c1">#some plots such as magnetic equator, etc.</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">)</span>  <span class="c1"># path to your helper script folder</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">utils.zenodo_tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_from_zenodo</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">utils.get_dependencies</span><span class="w"> </span><span class="kn">import</span> <span class="n">ensure_dependencies</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#This code downloads the files and packages</span>
+<span class="c1">#into a folder named dependencies</span>
+<span class="n">ensure_dependencies</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>✔ convert_waccmx_datesec.py already exists. Skipping download.
+✔ sha.py already exists. Skipping download.
+✔ igrf13coeffs.txt already exists. Skipping download.
+✔ mag2geo_all.csv already exists. Skipping download.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import User-defined packages and files downloaded</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">)</span>  <span class="c1"># adjust if needed</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dependencies.convert_waccmx_datesec</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>   <span class="c1"># or import specific functions</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dependencies.sha</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sha</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">read_gold</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_gold_paths</span><span class="p">,</span> <span class="n">read_gold_files_v2</span><span class="p">,</span> <span class="n">plot_gold_maps2</span><span class="p">,</span> <span class="n">plot_edens2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Read the magnetic equator file</span>
+<span class="n">BASE_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>  <span class="c1"># current working directory</span>
+<span class="n">mag2geo</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s2">&quot;dependencies&quot;</span><span class="p">,</span> <span class="s2">&quot;mag2geo_all.csv&quot;</span><span class="p">)</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">mag2geo</span><span class="p">,</span> <span class="n">delim_whitespace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ===== File with WACCM-X EDens =====</span>
+<span class="n">wacx</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="s1">&#39;../data/WACCMX_subset.nc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="equatorial-ionization-anomaly-eia">
+<h2>Equatorial Ionization Anomaly (EIA)<a class="headerlink" href="#equatorial-ionization-anomaly-eia" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>First, let’s visualize the EIA. Assuming you take a ride into space, from the magnetic equator to about 300 km above Earth’s surface. Take about 5 steps southward. You will observe an obstruction; a mountain of plasma with its summit or peak at a magnetic latitude of about <span class="math notranslate nohighlight">\(15^o\)</span>.</p></li>
+<li><p>Turn North, and see if you can see a similar structure. Yes, you will observe a similar mountain with a peak at about the same magnetic latitude. These two mountains of plasma on either side of the magnetic equator are the <strong>CRESTS</strong>. Together with the depleted region <strong>(TROUGH)</strong> between the two crests, they form the <strong>Equatorial Ionization Anomaly (EIA)</strong>.</p></li>
+<li><p>In some texts, this structure is referred to as a hump of plasma on either side of the magnetic equator with peak at about <span class="math notranslate nohighlight">\(\pm15^o\)</span>. This hump-like plasma shape is shown in Figure 6.1.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ===== Choose Time Variable =====</span>
+<span class="n">wac_time</span> <span class="o">=</span> <span class="n">wacx</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">][:]</span> 
+
+<span class="n">plot_edens2</span><span class="p">(</span><span class="n">wacx</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/64aab352632d0107c718f5c762280da613ea8beb506d956dc995c4932ff44fe5.png" src="../_images/64aab352632d0107c718f5c762280da613ea8beb506d956dc995c4932ff44fe5.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Although the density of plasma can vary within the anomaly, the bulk of plasma is concentrated at about 300 to 400km.</p></li>
+</ul>
+<section id="formation-of-eia">
+<h3>Formation of EIA<a class="headerlink" href="#formation-of-eia" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In previous conversations, we talked about zonal electric field. We tried to understand its source and orientation under various sources. One of the fields we discussed is the zonal electric field; directed eastward during the day but westward after sunset.</p></li>
+<li><p>On the other hand, remember that magnetic field is directed northward. The cross (interaction) between these vectors causes plasma to drift in a direction perpendicular to the Electric-magnetic fields plane as illustrated below.</p></li>
+</ul>
+<p>\begin{equation}
+V_{E \times B} = \frac{\textbf{E} \times \textbf{B}}{B^2}
+\end{equation}</p>
+<ul class="simple">
+<li><p>The result of this process is the upward lift of plasma, and a subsequent poleward drift (pressure gradient), thereby forming a fountain-like structure, commonly called the <strong>FOUNTAIN (MOUNTAIN) EFFECT</strong> in aeronomy circles. See Figure 6.2 for illustration and <a class="reference internal" href="#notebooks/Electrodynamic_variables_2.ipynb"><span class="xref myst">Electrodynamic Variables II</span></a> and <a class="reference internal" href="#notebooks/Electrodynamic_variables_1.ipynb"><span class="xref myst">Electrodynamic Variables I</span></a> for more details about the source of these fields.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ======== Plot Direction of Drift Velocity ========</span>
+
+<span class="n">SMALL_SIZE</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">SMALL_SIZE</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define vectors</span>
+<span class="n">E</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>  <span class="c1"># downward</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>   <span class="c1"># northward</span>
+<span class="n">v_d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>      <span class="c1"># ExB drift</span>
+
+<span class="c1"># Function to plot vectors</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_vector</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">vec</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">label</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">vec</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+              <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">arrow_length_ratio</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">vec</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot all vectors</span>
+<span class="n">plot_vector</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;E (East)&#39;</span><span class="p">)</span>
+<span class="n">plot_vector</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;B (North)&#39;</span><span class="p">)</span>
+<span class="n">plot_vector</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">v_d</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;Drift (Up)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Axes settings</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">([</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;X (East)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y (North)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Z (Up)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_box_aspect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 6.2: E × B Drift Direction&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ce45320b4bf7a68e3949058c6c0b1f721b7bdddfead93a8dae9e57fe5f5f75af.png" src="../_images/ce45320b4bf7a68e3949058c6c0b1f721b7bdddfead93a8dae9e57fe5f5f75af.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Video 6.1 shows an animated illustration of the drift of ions.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Folder path and video filename</span>
+<span class="n">video_path</span> <span class="o">=</span> <span class="s2">&quot;../data/FountainEffect.mp4&quot;&quot;</span>
+
+<span class="c1"># Define the video object</span>
+<span class="n">video</span> <span class="o">=</span> <span class="n">Video</span><span class="p">(</span><span class="n">video_path</span><span class="p">,</span> <span class="n">embed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+
+<span class="c1"># Display the video with a caption or source</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;div style=&quot;display:inline-block; text-align:center;&quot;&gt;</span>
+<span class="s2">    </span><span class="si">{</span><span class="n">video</span><span class="o">.</span><span class="n">_repr_html_</span><span class="p">()</span><span class="si">}</span>
+<span class="s2">    &lt;div style=&quot;text-align:right; font-size:12px; color:gray; margin-top:5px;&quot;&gt;</span>
+<span class="s2">        Source: NASA</span>
+<span class="s2">    &lt;/div&gt;</span>
+<span class="s2">&lt;/div&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="factors-influencing-eia-formation">
+<h3>Factors Influencing EIA Formation<a class="headerlink" href="#factors-influencing-eia-formation" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Meridional neutral winds</p></li>
+<li><p>Season: More pronounced during equinoxes</p></li>
+<li><p>Longitude: Varies with longitude</p></li>
+<li><p>Solar condition: Enhanced during intense or high solar activity (more ionization)</p></li>
+<li><p>Geomagnetic condition: Intense geomagnetic condition can enhance or undermine it, depending on the direction of E</p></li>
+<li><p>Time of day: Stronger at local noon and afternoon</p></li>
+</ol>
+</section>
+</section>
+<section id="equatorial-plasma-bubbles-epbs">
+<h2>Equatorial Plasma Bubbles (EPBs)<a class="headerlink" href="#equatorial-plasma-bubbles-epbs" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>As the name implies, EPBs are regions of depleted plasma in the equatorial ionosphere. Let’s take another mental journey through space.</p></li>
+<li><p>So, assuming you are in space, at an altitude of about 300 km. Travel along the magnetic equator. You will observe gutters or depletions of plasma lying along magnetic field lines but across the magnetic equator.</p></li>
+<li><p>These gutters are EPBs and because they lie along magnetic field lines, they are sometimes called Field-Aligned-Irregularities (FAIs). See the snapshot of the equatorial ionosphere observed by NASA’s Global-scale Observation of the Limb and Disk (GOLD) instrument on the SES-14 satellite launched in October, 2018.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import GOLD files</span>
+
+<span class="c1"># Base directory</span>
+<span class="n">base_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;/media/amadi/amadi_gate1/GOLD_2021/SEL&quot;</span><span class="p">)</span>
+
+<span class="c1"># Define metadata for each month</span>
+<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;NOVSEL&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;day&quot;</span><span class="p">:</span> <span class="mi">329</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;v04&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;AUGSEL&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;day&quot;</span><span class="p">:</span> <span class="mi">240</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;v05&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;MAYSEL&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;day&quot;</span><span class="p">:</span> <span class="mi">128</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;v05&quot;</span><span class="p">},</span>
+<span class="p">}</span>
+
+<span class="n">channels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;CHA&quot;</span><span class="p">,</span> <span class="s2">&quot;CHB&quot;</span><span class="p">]</span>
+
+<span class="c1"># Build file list dynamically</span>
+<span class="n">sell4</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">base_dir</span> <span class="o">/</span> <span class="n">month</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;GOLD_L1C_</span><span class="si">{</span><span class="n">ch</span><span class="si">}</span><span class="s2">_NI1_2021_</span><span class="si">{</span><span class="n">cfg</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">_23_40_</span><span class="si">{</span><span class="n">cfg</span><span class="p">[</span><span class="s1">&#39;version&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">_r01_c01.nc&quot;</span>
+    <span class="k">for</span> <span class="n">month</span><span class="p">,</span> <span class="n">cfg</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">channels</span>
+<span class="p">]</span>
+
+<span class="c1"># Optional: convert to strings if needed by downstream code</span>
+<span class="n">sell4</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">sell4</span><span class="p">]</span>
+
+<span class="c1"># Print to verify</span>
+<span class="c1">#for f in sell4:</span>
+    <span class="c1">#print(f)</span>
+<span class="c1">#sell4</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># === LOAD Gold files and read ===</span>
+<span class="n">cordas</span><span class="p">,</span> <span class="n">fylz</span><span class="p">,</span> <span class="n">alph</span> <span class="o">=</span> <span class="n">read_gold_files_v2</span><span class="p">(</span><span class="n">sell4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># === PLOT ===</span>
+
+<span class="n">YEAR</span> <span class="o">=</span> <span class="mi">2021</span>
+<span class="n">VMIN</span><span class="p">,</span> <span class="n">VMAX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">50</span>
+<span class="n">FIGSIZE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>   <span class="c1"># Bigger figure for better visibility</span>
+<span class="n">SMALL_SIZE</span> <span class="o">=</span> <span class="mi">12</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span> <span class="n">FIGSIZE</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">Orthographic</span><span class="p">(</span><span class="n">central_longitude</span><span class="o">=-</span><span class="mi">40</span><span class="p">))</span>
+
+    <span class="c1"># Overlay two frames (i and i+3)</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span>
+            <span class="n">cordas</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">cordas</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">cordas</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="n">j</span><span class="p">],</span>
+            <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;plasma&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">VMIN</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">VMAX</span>
+        <span class="p">)</span>
+
+    <span class="c1"># Map features</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">()</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_global</span><span class="p">()</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Longitude (deg)&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Latitude (deg)&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Derive time label from filename</span>
+    <span class="n">fname</span> <span class="o">=</span> <span class="n">fylz</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">day_num</span> <span class="o">=</span> <span class="n">fname</span><span class="p">[</span><span class="mi">68</span><span class="p">:</span><span class="mi">71</span><span class="p">]</span>
+    <span class="n">local_time</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">fname</span><span class="p">[</span><span class="mi">72</span><span class="p">:</span><span class="mi">74</span><span class="p">])</span><span class="o">-</span><span class="mi">3</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">fname</span><span class="p">[</span><span class="mi">75</span><span class="p">:</span><span class="mi">77</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">date_str</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">day_num</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;%Y-%j&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">alph</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">) </span><span class="si">{</span><span class="n">date_str</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">local_time</span><span class="si">}</span><span class="s2"> LT&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Plot magnetic equator (assumes dfind is a DataFrame with con_lon/con_lat)</span>
+    <span class="c1">#Plot Magnetic Equator</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="mi">30</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;lon__&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)],</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;lat__&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)],</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> 
+               <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">size</span><span class="p">,)</span>
+
+<span class="c1"># === COLORBAR ===</span>
+<span class="n">cbar_ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">])</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">cax</span><span class="o">=</span><span class="n">cbar_ax</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Figure 6.3: OI 135.6 nm Radiance (R) observed by NASA</span><span class="se">\&#39;</span><span class="s1">s GOLD&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">wspace</span><span class="o">=</span><span class="mf">0.025</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.12</span><span class="p">)</span>
+
+<span class="c1"># === SAVE &amp; SHOW ===</span>
+<span class="c1">#output_path = f&quot;/media/amadi/Amadi_new_drive/PHD_RESEARCH2/GOLD/RESULTS/GOLD_GW_WAVE_4_{YEAR}.jpg&quot;</span>
+<span class="c1">#plt.savefig(output_path, bbox_inches=&#39;tight&#39;)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/dbda4b80009dfc59b80797b8db0997a8f68164bef4e739ad63d354f34518342a.png" src="../_images/dbda4b80009dfc59b80797b8db0997a8f68164bef4e739ad63d354f34518342a.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Observe the dark stripes cutting across the magnetic equator on Figure 6.3a. Those stripes are called EPBs. EPBs are not present everyday as seen on Figures 6.3b and 6.3c.</p></li>
+</ul>
+<section id="formation-of-epbs">
+<h3>Formation of EPBs<a class="headerlink" href="#formation-of-epbs" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The primary driver of EPBs is the Rayleigh-Taylor Instability (RTI), sometimes referred to as Collisional-Interchange Instability (CII).</p></li>
+<li><p>RTI is extensively studied by thermodynamic scientist or engineers. This is because in some cases, dense fluid tends to rest over a less dense fluid until a perturbation is introduced.</p></li>
+<li><p>This perturbation introduces an instability that causes the light fluid to force its way upwards into the heavy fluid, by forming bubbles. See Figure 6.4.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ===== Import RTI illustration Image =====</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">mpimg</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;../images/RTI_thermo.png&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">600</span><span class="p">,</span> <span class="mi">100</span><span class="p">:</span><span class="mi">780</span><span class="p">])</span>  <span class="c1"># [y1:y2, x1:x2] crop area</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add a title</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Figure 6.4: Rayleigh Taylor Instability (RTI)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/a472ce593fc925bf8d48d532d5519c1a066bb8366454d0c23d75d0a37c8ed993.png" src="../_images/a472ce593fc925bf8d48d532d5519c1a066bb8366454d0c23d75d0a37c8ed993.png" />
+</div>
+</div>
+</section>
+<section id="three-conditions-that-has-to-be-met-for-rti-to-occur-are">
+<h3>Three conditions that has to be met for RTI to occur are:<a class="headerlink" href="#three-conditions-that-has-to-be-met-for-rti-to-occur-are" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Difference in density between fluids</p></li>
+<li><p>Density gradient must oppose direction of acceleration (g)</p></li>
+<li><p>Presence of perturbation</p></li>
+</ul>
+<section id="is-the-first-condition-met-in-the-evening-equatorial-ionosphere-plasma">
+<h4>Is the first condition met in the evening equatorial ionosphere (plasma)?<a class="headerlink" href="#is-the-first-condition-met-in-the-evening-equatorial-ionosphere-plasma" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>The first condition says, “The density of the fluids has to be different”.</p></li>
+<li><p>The layers of the ionosphere respond differently to the absence of solar radiation.</p></li>
+<li><p>Recombination rate (of ions and electrons) in the upper layers is linear (low) but quadratic (higher) in the lower layers of the ionosphere.</p></li>
+<li><p>It means that the density of plasma (ions/electrons) will be higher in the upper than the lower layers of the ionosphere. Hence, this meets the first condition for RTI to occur.</p></li>
+</ul>
+</section>
+<section id="is-the-second-condition-met-in-the-evening-equatorial-ionosphere-plasma">
+<h4>Is the second condition met in the evening equatorial ionosphere (plasma)?<a class="headerlink" href="#is-the-second-condition-met-in-the-evening-equatorial-ionosphere-plasma" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>The second condition says, “Density gradient must oppose direction of acceleration (g)”.</p></li>
+<li><p>Since the density gradient points in the direction of steepest increase or uphill (higher density), the density gradient points upward while acceleration points downwards. Hence, the second condition is been met.</p></li>
+</ul>
+</section>
+<section id="what-about-the-third-condition">
+<h4>What about the third condition?<a class="headerlink" href="#what-about-the-third-condition" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>The third condition says, “Presence of perturbation”.</p></li>
+<li><p>The ionosphere is characterized by tides, waves, neutral winds and localized electric field-induced perturbations.</p></li>
+<li><p>These structures introduce perturbations that drives the instability. Hence, the third condition is met.</p></li>
+<li><p>Unlike, other regions of the ionosphere, waves propagate upwards in the equatorial ionosphere, hence, more evidence of gravity-driven instabilities.</p></li>
+</ul>
+</section>
+</section>
+<section id="factors-influencing-the-occurrence-of-epbs">
+<h3>Factors influencing the occurrence of EPBs<a class="headerlink" href="#factors-influencing-the-occurrence-of-epbs" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Meridional neutral winds</p></li>
+<li><p>Season: More pronounced during summer in the American sector</p></li>
+<li><p>Longitude: Varies with longitude</p></li>
+<li><p>Solar condition: Enhanced during intense or high solar activity (more ionization)</p></li>
+<li><p>Geomagnetic condition: Intense geomagnetic condition can enhance or undermine it, depending on the direction of E</p></li>
+<li><p>Time of day: Stronger after</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Anomalies_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Anomalies of the Equatorial Ionosphere I</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Not_the_END.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Not the End…</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#by-amadi-brians-c">By Amadi Brians C.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bamadi-brianspace-org">bamadi@brianspace.org</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-ionization-anomaly-eia">Equatorial Ionization Anomaly (EIA)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formation-of-eia">Formation of EIA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-influencing-eia-formation">Factors Influencing EIA Formation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-plasma-bubbles-epbs">Equatorial Plasma Bubbles (EPBs)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formation-of-epbs">Formation of EPBs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#three-conditions-that-has-to-be-met-for-rti-to-occur-are">Three conditions that has to be met for RTI to occur are:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-the-first-condition-met-in-the-evening-equatorial-ionosphere-plasma">Is the first condition met in the evening equatorial ionosphere (plasma)?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-the-second-condition-met-in-the-evening-equatorial-ionosphere-plasma">Is the second condition met in the evening equatorial ionosphere (plasma)?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-the-third-condition">What about the third condition?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-influencing-the-occurrence-of-epbs">Factors influencing the occurrence of EPBs</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
